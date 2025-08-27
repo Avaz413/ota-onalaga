@@ -1,0 +1,151 @@
+Quyida **ikki fayl** ko'rinishida kod berilgan. Birinchisini `index.html`, ikkinchisini `style.css` nomida saqlang. `index.html` ichida `style.css` avtomatik ulanadi.
+
+---
+
+### 1) `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zo'r Sayt — Avaz uchun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Zo'r Sayt</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#galereya">Galereya</a>
+        <a href="#aloqa">Aloqa</a>
+        <a class="cta" href="#buyurtma">Buyurtma berish</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="chip"><span class="dot"></span> Sifatli, chiroyli va tez</span>
+        <h1>Professional landing sahifa — <br>rasmlar <em>to'g'ri o'lchamda</em> va <em>toza dizayn</em> bilan.</h1>
+        <p>Quyidagi misolda barcha rasmlar to'g'ri joylashtirilgan: <strong>object-fit: cover</strong>, <strong>aspect-ratio</strong> va <strong>alt</strong> atributlari bilan.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#buyurtma">Boshlash</a>
+          <a class="btn" href="#galereya">Galereyani ko'rish</a>
+        </div>
+      </div>
+      <figure class="hero-card" aria-label="Asosiy rasm">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop" alt="Ish jamoasi — zamonaviy ofisda" loading="eager" />
+        <figcaption class="hero-badge">Zamonaviy dizayn</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FEATURES / XIZMATLAR -->
+  <section id="xizmatlar" class="features">
+    <div class="container">
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Tez va moslashuvchan</h3>
+          <p>Mobil va kompyuterda to'liq moslashadi. Lighthouse ball yuqori.</p>
+        </div>
+        <div class="card">
+          <h3>To'g'ri rasm ishlatish</h3>
+          <p>Crop/resize — <code>object-fit: cover</code>, <code>aspect-ratio</code> bilan silliq grid.</p>
+        </div>
+        <div class="card">
+          <h3>SEO va tezlik</h3>
+          <p>Semantik taglar, alt matnlar, <code>loading="lazy"</code> — sahifa tez yuklanadi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galereya" class="container">
+    <div class="section-title">
+      <h2>Galereya</h2>
+      <span class="small">Rasmlar to'g'ri o'lchamda joylashtirilgan</span>
+    </div>
+    <div class="gallery">
+      <figure class="tile t1">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Kod yozilayotgan noutbuk yaqin ko'rinish" loading="lazy">
+        <figcaption class="cap">Frontend ish jarayoni</figcaption>
+      </figure>
+      <figure class="tile t2">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop" alt="Dasturchilar jamoasi" loading="lazy">
+        <figcaption class="cap">Jamoa bilan hamkorlik</figcaption>
+      </figure>
+      <figure class="tile t3">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Uchrashuv paytida yozuvlar" loading="lazy">
+        <figcaption class="cap">Reja va strategiya</figcaption>
+      </figure>
+      <figure class="tile t4">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Ofis ichki ko'rinishi" loading="lazy">
+        <figcaption class="cap">Toza ish muhiti</figcaption>
+      </figure>
+      <figure class="tile t5">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Taxtada ishlanayotgan g'oyalar" loading="lazy">
+        <figcaption class="cap">Ijodiy fikrlar</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <div class="tgrid">
+      <div class="card">
+        <p class="quote">“Sayt juda tez ochiladi, telefon va kompyuterda zo'r ko'rinadi.”</p>
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=200&auto=format&fit=crop" alt="Mijoz portreti">
+          <div>
+            <strong>Madina A.</strong>
+            <div class="small">Tadbirkor</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="quote">“Rasmlar automatik o'lchamlanadi, dizayni toza. Tavsiya qilaman!”</p>
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop" alt="Mijoz portreti">
+          <div>
+            <strong>Bekzod N.</strong>
+            <div class="small">Dizayner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="aloqa" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Aloqa</h2>
+        <span class="small">24/7 xabar qoldiring</span>
+      </div>
+      <form>
+        <input class="input" type="text" placeholder="Ismingiz" required>
+        <input class="input" type="email" placeholder="Email" required>
+        <textarea class="input" placeholder="Xabaringiz"></textarea>
+        <button class="btn primary" id="buyurtma" type="submit">Yuborish</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 Zo'r Sayt. Barcha huquqlar himoyalangan.</div>
+  </footer>
+</body>
+</html>

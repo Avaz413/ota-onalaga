@@ -1,0 +1,249 @@
+Quyida **ikki fayl** 
+---
+
+### 1) `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zo'r Sayt — Avaz uchun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Zo'r Sayt</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#xizmatlar">Xizmatlar</a>
+        <a href="#galereya">Galereya</a>
+        <a href="#aloqa">Aloqa</a>
+        <a class="cta" href="#buyurtma">Buyurtma berish</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="chip"><span class="dot"></span> Sifatli, chiroyli va tez</span>
+        <h1>Professional landing sahifa — <br>rasmlar <em>to'g'ri o'lchamda</em> va <em>toza dizayn</em> bilan.</h1>
+        <p>Quyidagi misolda barcha rasmlar to'g'ri joylashtirilgan: <strong>object-fit: cover</strong>, <strong>aspect-ratio</strong> va <strong>alt</strong> atributlari bilan.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#buyurtma">Boshlash</a>
+          <a class="btn" href="#galereya">Galereyani ko'rish</a>
+        </div>
+      </div>
+      <figure class="hero-card" aria-label="Asosiy rasm">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop" alt="Ish jamoasi — zamonaviy ofisda" loading="eager" />
+        <figcaption class="hero-badge">Zamonaviy dizayn</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FEATURES / XIZMATLAR -->
+  <section id="xizmatlar" class="features">
+    <div class="container">
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Tez va moslashuvchan</h3>
+          <p>Mobil va kompyuterda to'liq moslashadi. Lighthouse ball yuqori.</p>
+        </div>
+        <div class="card">
+          <h3>To'g'ri rasm ishlatish</h3>
+          <p>Crop/resize — <code>object-fit: cover</code>, <code>aspect-ratio</code> bilan silliq grid.</p>
+        </div>
+        <div class="card">
+          <h3>SEO va tezlik</h3>
+          <p>Semantik taglar, alt matnlar, <code>loading="lazy"</code> — sahifa tez yuklanadi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galereya" class="container">
+    <div class="section-title">
+      <h2>Galereya</h2>
+      <span class="small">Rasmlar to'g'ri o'lchamda joylashtirilgan</span>
+    </div>
+    <div class="gallery">
+      <figure class="tile t1">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Kod yozilayotgan noutbuk yaqin ko'rinish" loading="lazy">
+        <figcaption class="cap">Frontend ish jarayoni</figcaption>
+      </figure>
+      <figure class="tile t2">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop" alt="Dasturchilar jamoasi" loading="lazy">
+        <figcaption class="cap">Jamoa bilan hamkorlik</figcaption>
+      </figure>
+      <figure class="tile t3">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Uchrashuv paytida yozuvlar" loading="lazy">
+        <figcaption class="cap">Reja va strategiya</figcaption>
+      </figure>
+      <figure class="tile t4">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Ofis ichki ko'rinishi" loading="lazy">
+        <figcaption class="cap">Toza ish muhiti</figcaption>
+      </figure>
+      <figure class="tile t5">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Taxtada ishlanayotgan g'oyalar" loading="lazy">
+        <figcaption class="cap">Ijodiy fikrlar</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <div class="tgrid">
+      <div class="card">
+        <p class="quote">“Sayt juda tez ochiladi, telefon va kompyuterda zo'r ko'rinadi.”</p>
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=200&auto=format&fit=crop" alt="Mijoz portreti">
+          <div>
+            <strong>Madina A.</strong>
+            <div class="small">Tadbirkor</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="quote">“Rasmlar automatik o'lchamlanadi, dizayni toza. Tavsiya qilaman!”</p>
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop" alt="Mijoz portreti">
+          <div>
+            <strong>Bekzod N.</strong>
+            <div class="small">Dizayner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="aloqa" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Aloqa</h2>
+        <span class="small">24/7 xabar qoldiring</span>
+      </div>
+      <form>
+        <input class="input" type="text" placeholder="Ismingiz" required>
+        <input class="input" type="email" placeholder="Email" required>
+        <textarea class="input" placeholder="Xabaringiz"></textarea>
+        <button class="btn primary" id="buyurtma" type="submit">Yuborish</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 Zo'r Sayt. Barcha huquqlar himoyalangan.</div>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+### 2) `style.css`
+
+```css
+:root{
+  --bg:#0b0f19;
+  --card:#12182a;
+  --text:#e6ecff;
+  --muted:#9fb2ff;
+  --accent:#4f7cff;
+  --ring: rgba(79,124,255,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 600px at 10% -10%, #142042 0, transparent 60%),
+              radial-gradient(1400px 800px at 95% -10%, #1a2650 0, transparent 60%),
+              var(--bg);
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:min(1100px, 92%); margin-inline:auto}
+
+/* Navbar */
+.nav{position:sticky; top:0; z-index:30; backdrop-filter: blur(8px); background:rgba(11,15,25,.6); border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.brand{display:flex; align-items:center; gap:10px; font-weight:700}
+.brand .logo{width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg, #4f7cff, #7aa8ff); box-shadow:0 0 0 6px var(--ring)}
+.nav-links{display:flex; gap:18px}
+.nav-links a{padding:8px 12px; border-radius:10px; opacity:.9}
+.nav-links a:hover{background:rgba(255,255,255,.06); opacity:1}
+.cta{background:var(--accent); color:white; padding:10px 14px; border-radius:12px; font-weight:600; box-shadow:0 10px 30px -12px var(--ring);}
+.cta:hover{filter:brightness(1.05)}
+
+/* Hero */
+.hero{padding:64px 0 36px;}
+.hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center}
+.chip{display:inline-flex; gap:8px; align-items:center; background:rgba(255,255,255,.06); padding:6px 10px; border-radius:999px; color:var(--muted); font-size:.9rem;}
+.chip .dot{width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 6px var(--ring)}
+.hero h1{font-size: clamp(28px, 4vw, 44px); line-height:1.15; margin:14px 0}
+.hero p{color:#cfe0ff; font-size:1.05rem; margin:0 0 18px}
+.hero-actions{display:flex; gap:12px; flex-wrap:wrap}
+.btn{display:inline-block; padding:12px 16px; border-radius:12px; font-weight:600; border:1px solid rgba(255,255,255,.12)}
+.btn.primary{background:var(--accent); border-color:transparent}
+
+.hero-card{position:relative; border-radius:18px; overflow:hidden; background:var(--card); border:1px solid rgba(255,255,255,.06)}
+.hero-card img{height:100%; width:100%; object-fit:cover;}
+.hero-badge{position:absolute; bottom:14px; left:14px; background:rgba(0,0,0,.55); padding:8px 12px; border-radius:10px; font-weight:600;}
+
+/* Features */
+.features{padding:38px 0}
+.grid{display:grid; gap:16px}
+.grid.cols-3{grid-template-columns:repeat(3, 1fr)}
+.card{background:var(--card); border:1px solid rgba(255,255,255,.06); padding:18px; border-radius:18px}
+.card h3{margin:0 0 6px; font-size:1.05rem}
+.card p{margin:0; color:#cce0ff}
+
+/* Gallery */
+.section-title{display:flex; align-items:center; justify-content:space-between; margin:28px 0 14px}
+.section-title h2{margin:0; font-size:1.4rem}
+.gallery{display:grid; grid-template-columns:repeat(12, 1fr); gap:10px}
+.tile{position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.06)}
+.tile.t1{grid-column:span 7; aspect-ratio:16/10}
+.tile.t2{grid-column:span 5; aspect-ratio:16/10}
+.tile.t3{grid-column:span 4; aspect-ratio:4/5}
+.tile.t4{grid-column:span 4; aspect-ratio:4/5}
+.tile.t5{grid-column:span 4; aspect-ratio:4/5}
+.tile img{width:100%; height:100%; object-fit:cover}
+.tile .cap{position:absolute; inset:auto 10px 10px 10px; background:rgba(0,0,0,.5); padding:6px 10px; border-radius:10px; font-size:.9rem}
+
+/* Testimonials */
+.testimonials{padding:30px 0}
+.tgrid{display:grid; grid-template-columns:1.2fr .8fr; gap:16px}
+.quote{font-size:1.05rem; color:#d9e7ff}
+.avatar{display:flex; align-items:center; gap:10px; margin-top:10px}
+.avatar img{width:40px; height:40px; border-radius:50%; object-fit:cover}
+.small{color:#b8c8ff; font-size:.9rem}
+
+/* Contact */
+.contact{padding:30px 0 60px}
+form{display:grid; gap:10px}
+.input{background:#0e1426; border:1px solid rgba(255,255,255,.08); color:var(--text); padding:12px 14px; border-radius:12px}
+textarea.input{min-height:110px; resize:vertical}
+
+.footer{padding:20px 0; border-top:1px solid rgba(255,255,255,.06); color:#a8bbff}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .tgrid{grid-template-columns:1fr}
+  .grid.cols-3{grid-template-columns:1fr}
+  .tile.t1,.tile.t2,.tile.t3,.tile.t4,.tile.t5{grid-column:span 12}
+}```
